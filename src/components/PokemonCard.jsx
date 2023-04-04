@@ -1,15 +1,26 @@
 import React from "react";
 
-const PokemonCard = () => {
+
+
+
+function PokemonCard(props) {
+
+  console.log(props)
+
   return (
+
     <figure>
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-        alt=""
-      />
-      <figcaption>bulbasaur</figcaption>
+      {
+      props.pokemon.imgSrc ? <img
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+      alt=""
+    /> : "..."  
+
+      }
+      <figcaption>{props.pokemon.name}</figcaption>
     </figure>
   );
+
 };
 
 export default PokemonCard;
