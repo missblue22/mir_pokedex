@@ -6,7 +6,7 @@ import PokemonCard from './components/PokemonCard'
 function App() {
   return (
     <div>
-    <PokemonCard /><p>salutmireille</p>
+    <PokemonCard />
     </div>
   );
 }
